@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>그림판</title>
+</head>
+<body>
+    펜 굵기 : 
+    <input type="range" min="5" max="100" value="5" step="5" name="border" onchange="changeLineWidth(this.value)"/>
+    <br>
+    펜 색상 : <input type="color" onchange="changeColor(this.value)"/>
+    <canvas id="draw"></canvas>
+    <script src="canvas.js"></script>
+</body>
+</html>
